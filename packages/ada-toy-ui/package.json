@@ -1,0 +1,9 @@
+{
+  "name": "ada-ui",
+  "packageManager": "yarn@3.8.2",
+  "dependencies": {
+    "@ada-ui/components": "workspace:*",
+    "@ada-ui/constants": "workspace:*",
+    "lodash-es": "^4.17.21"
+  }
+}
