@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/ada-toy-ui/',
   title: "YX Mobile UI Components",
   description: "A VitePress Site",
   themeConfig: {
