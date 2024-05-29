@@ -12,5 +12,9 @@ const handleClick = (e) => {
 </script>
 
 <template>
-  <button @click="handleClick">Button</button>
+  <button class="ym-button" @click="handleClick">Button</button>
 </template>
+
+<style scoped>
+@import url(./style.css);
+</style>

@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "dev": "yarn workspace @ada-ui/play dev",
+    "build": "yarn workspace ada-ui build",
     "docs:dev": "yarn workspace @ada-ui/docs dev",
     "docs:build": "yarn workspace @ada-ui/docs docs:build",
     "test": "yarn workspace @ada-ui/components test"
@@ -26,7 +27,6 @@
     "postcss-for": "^2.1.1",
     "postcss-nested": "^6.0.1",
     "typescript": "^5.4.5",
-    "vite": "^5.2.11",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.19"
   },
@@ -35,7 +35,6 @@
     "@ada-ui/theme": "workspace:*",
     "@ada-ui/utils": "workspace:*",
     "ada-ui": "workspace:*",
-    "lodash-es": "^4.17.21",
-    "vue": "^3.4.27"
+    "lodash-es": "^4.17.21"
   }
 }

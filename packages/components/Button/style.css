@@ -1,0 +1,11 @@
+.ym-button {
+  appearance: none;
+  background: lightblue;
+  color: lightslategray;
+}
+
+.ym-button:hover {
+  background: lightskyblue;
+  color: #333;
+  border: none;
+}
