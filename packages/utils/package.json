@@ -1,4 +1,7 @@
 {
-  "name": "@ada-ui/utils",
-  "packageManager": "yarn@3.8.2"
+  "name": "@adz-ui/utils",
+  "packageManager": "yarn@3.8.2",
+  "dependencies": {
+    "vue": "^3.4.27"
+  }
 }

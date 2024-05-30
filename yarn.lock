@@ -5,11 +5,11 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@ada-ui/components@workspace:*, @ada-ui/components@workspace:packages/components":
+"@adz-ui/components@workspace:*, @adz-ui/components@workspace:packages/components":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/components@workspace:packages/components"
+  resolution: "@adz-ui/components@workspace:packages/components"
   dependencies:
-    "@ada-ui/utils": "workspace:*"
+    "@adz-ui/utils": "workspace:*"
     "@popperjs/core": ^2.11.8
     "@vitest/coverage-v8": ^1.6.0
     "@vue/test-utils": ^2.4.6
@@ -19,33 +19,33 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ada-ui/constants@workspace:*, @ada-ui/constants@workspace:packages/constants":
+"@adz-ui/constants@workspace:*, @adz-ui/constants@workspace:packages/constants":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/constants@workspace:packages/constants"
+  resolution: "@adz-ui/constants@workspace:packages/constants"
   languageName: unknown
   linkType: soft
 
-"@ada-ui/docs@workspace:docs":
+"@adz-ui/docs@workspace:docs":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/docs@workspace:docs"
+  resolution: "@adz-ui/docs@workspace:docs"
   dependencies:
     vitepress: ^1.2.2
     vue: ^3.4.27
   languageName: unknown
   linkType: soft
 
-"@ada-ui/hooks@workspace:*, @ada-ui/hooks@workspace:packages/hooks":
+"@adz-ui/hooks@workspace:*, @adz-ui/hooks@workspace:packages/hooks":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/hooks@workspace:packages/hooks"
+  resolution: "@adz-ui/hooks@workspace:packages/hooks"
   languageName: unknown
   linkType: soft
 
-"@ada-ui/play@workspace:play":
+"@adz-ui/play@workspace:play":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/play@workspace:play"
+  resolution: "@adz-ui/play@workspace:play"
   dependencies:
     "@vitejs/plugin-vue": ^5.0.4
-    ada-ui: "workspace:*"
+    adz-ui: "workspace:*"
     typescript: ^5.2.2
     vite: ^5.2.0
     vue: ^3.4.21
@@ -53,15 +53,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ada-ui/theme@workspace:*, @ada-ui/theme@workspace:packages/theme":
+"@adz-ui/theme@workspace:*, @adz-ui/theme@workspace:packages/theme":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/theme@workspace:packages/theme"
+  resolution: "@adz-ui/theme@workspace:packages/theme"
   languageName: unknown
   linkType: soft
 
-"@ada-ui/utils@workspace:*, @ada-ui/utils@workspace:packages/utils":
+"@adz-ui/utils@workspace:*, @adz-ui/utils@workspace:packages/utils":
   version: 0.0.0-use.local
-  resolution: "@ada-ui/utils@workspace:packages/utils"
+  resolution: "@adz-ui/utils@workspace:packages/utils"
+  dependencies:
+    vue: ^3.4.27
   languageName: unknown
   linkType: soft
 
@@ -1177,19 +1179,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shikijs/core@npm:1.6.0, @shikijs/core@npm:^1.5.2":
-  version: 1.6.0
-  resolution: "@shikijs/core@npm:1.6.0"
-  checksum: 0a84e4afe2aebe5c4b63145ea73608ad45e73e08b555ecc34821e95df5dbf7041a3f5a726ab23cea276df5cf0710f5cfbed303491979a24e7fb17bd38966799c
+"@shikijs/core@npm:1.6.1, @shikijs/core@npm:^1.5.2":
+  version: 1.6.1
+  resolution: "@shikijs/core@npm:1.6.1"
+  checksum: b7ab2d83162852cf5f233addf98d68685e0f48f77ac17aea0dae024def750bc24a676d72c50a9deb6d48d4fa1a048f6e631ad16ffbb8cfb9143f1024690e6cb9
   languageName: node
   linkType: hard
 
 "@shikijs/transformers@npm:^1.5.2":
-  version: 1.6.0
-  resolution: "@shikijs/transformers@npm:1.6.0"
+  version: 1.6.1
+  resolution: "@shikijs/transformers@npm:1.6.1"
   dependencies:
-    shiki: 1.6.0
-  checksum: 18d0faa0270494966add660dc32649812acfe05cf52179375c9f2fb5f29cfb7b4af98e6df9c97edc58a8bdaecd4c1a63813816af9e17c0007a05b90e1d935d6b
+    shiki: 1.6.1
+  checksum: 3ea3aa5b03726adf4d530e0930c16372762e2486612c482d029169ad772dbdb500db5c1892c591b6c51be06a736315d894333b0ef331a094e4baafdab440a69e
   languageName: node
   linkType: hard
 
@@ -1261,12 +1263,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.12":
-  version: 20.12.12
-  resolution: "@types/node@npm:20.12.12"
+"@types/node@npm:^20.12.13":
+  version: 20.12.13
+  resolution: "@types/node@npm:20.12.13"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 5373983874b9af7c216e7ca5d26b32a8d9829c703a69f1e66f2113598b5be8582c0e009ca97369f1ec9a6282b3f92812208d06eb1e9fc3bd9b939b022303d042
+  checksum: 9ec8971a76b2435379c10689c639ba1bbf4451075709bdf4bf23b7972a63f7d966947914410f2d3711a315e1157d782b76cfadc32944e29db9dd444221aea699
   languageName: node
   linkType: hard
 
@@ -1782,15 +1784,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ada-toy-ui@workspace:."
   dependencies:
-    "@ada-ui/hooks": "workspace:*"
-    "@ada-ui/theme": "workspace:*"
-    "@ada-ui/utils": "workspace:*"
-    "@types/lodash-es": ^4.17.12
-    "@types/node": ^20.12.12
+    "@adz-ui/hooks": "workspace:*"
+    "@adz-ui/theme": "workspace:*"
+    "@adz-ui/utils": "workspace:*"
     "@vitejs/plugin-vue": ^5.0.4
     "@vitejs/plugin-vue-jsx": ^3.1.0
     "@vue/tsconfig": ^0.5.1
-    ada-ui: "workspace:*"
+    adz-ui: "workspace:*"
     lodash-es: ^4.17.21
     postcss: ^8.4.38
     postcss-color-mix: ^1.1.0
@@ -1804,12 +1804,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ada-ui@workspace:*, ada-ui@workspace:packages/ada-toy-ui":
+"adz-ui@workspace:*, adz-ui@workspace:packages/ada-toy-ui":
   version: 0.0.0-use.local
-  resolution: "ada-ui@workspace:packages/ada-toy-ui"
+  resolution: "adz-ui@workspace:packages/ada-toy-ui"
   dependencies:
-    "@ada-ui/components": "workspace:*"
-    "@ada-ui/constants": "workspace:*"
+    "@adz-ui/components": "workspace:*"
+    "@adz-ui/constants": "workspace:*"
+    "@types/lodash-es": ^4.17.12
+    "@types/node": ^20.12.13
     "@vitejs/plugin-vue": ^5.0.4
     lodash-es: ^4.17.21
     move-file-cli: ^3.0.0
@@ -2116,9 +2118,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001587":
-  version: 1.0.30001624
-  resolution: "caniuse-lite@npm:1.0.30001624"
-  checksum: 0b9d0c17e28c0c14c0a845fd595ab25e2c79a69f9d85b56c9459ec712ba3a912b71d2ad2e6eb2763ed1574ec80a1c2a37a3cd404dc6b6989b03658c825abeed0
+  version: 1.0.30001625
+  resolution: "caniuse-lite@npm:1.0.30001625"
+  checksum: e7f8b9e10c35a5d9a1d1db76be398cb1c592ee1bc905fabe6bd90313537099d29a65c49c85e6350132fa30ca20e8c0317ecfaa66d997f7fac21ff37ddaece2a9
   languageName: node
   linkType: hard
 
@@ -2512,9 +2514,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.783
-  resolution: "electron-to-chromium@npm:1.4.783"
-  checksum: 49dfd8614c8e28076ca82e241a4a246685440dacde5e2cdb85d57a0d5bcc1cbd5de3201b3158b94ad5f1016e91ab9bb0d4da8cfe46d2897400fb62e6a5be198e
+  version: 1.4.785
+  resolution: "electron-to-chromium@npm:1.4.785"
+  checksum: 4b983ba9274be7706663c7892e602e968aa3c6e2e8ae65e5a243901a39ec6838e8ba8ac6c8f001e150a690287343a584cc82105175704559894c37b4771e2090
   languageName: node
   linkType: hard
 
@@ -5108,12 +5110,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:1.6.0, shiki@npm:^1.5.2":
-  version: 1.6.0
-  resolution: "shiki@npm:1.6.0"
+"shiki@npm:1.6.1, shiki@npm:^1.5.2":
+  version: 1.6.1
+  resolution: "shiki@npm:1.6.1"
   dependencies:
-    "@shikijs/core": 1.6.0
-  checksum: 88472edbe6d84cb4d9ac9e1d29c1e4cb89fc47bb9bea6501ef1c80c2a7ba28eb0f25c0f049f77ad43f09cd7f04178f95a69462182540f15d4da1ffb73d8c9d4d
+    "@shikijs/core": 1.6.1
+  checksum: 5e8737e6dc59baccc7dca12c6f3d8c962c5d2b4716ce5da6613c615cdfd91ec5e7b289b16da3ecce7658fe0112dab71ddbbb7d4f4feaedd085fccd397e03a9a9
   languageName: node
   linkType: hard
 
@@ -5821,8 +5823,8 @@ __metadata:
   linkType: hard
 
 "vite@npm:^5.0.0, vite@npm:^5.2.0, vite@npm:^5.2.11":
-  version: 5.2.11
-  resolution: "vite@npm:5.2.11"
+  version: 5.2.12
+  resolution: "vite@npm:5.2.12"
   dependencies:
     esbuild: ^0.20.1
     fsevents: ~2.3.3
@@ -5856,7 +5858,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 3f9f976cc6ada93aca56abcc683a140e807725b351abc241a1ec0763ec561a4bf5760e1ad94de4e59505904ddaa88727de66af02f61ecf540c7720045de55d0a
+  checksum: 908b8a09460c031fe94c2038a46743a73a70fe76fd1991ae8b51a56eb88dec75128bc7da7ab37d8f84c0e1e3063ce268bdd81cc27d79229f8ea756e752bc83d9
   languageName: node
   linkType: hard
 

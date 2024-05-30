@@ -1,3 +1,3 @@
-import { YmButton } from "@ada-ui/components";
+import { YmButton } from "@adz-ui/components";
 
 export default [YmButton];

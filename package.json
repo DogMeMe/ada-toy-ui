@@ -8,15 +8,13 @@
     "play"
   ],
   "scripts": {
-    "dev": "yarn workspace @ada-ui/play dev",
-    "build": "yarn workspace ada-ui build",
-    "docs:dev": "yarn workspace @ada-ui/docs dev",
-    "docs:build": "yarn workspace @ada-ui/docs docs:build",
-    "test": "yarn workspace @ada-ui/components test"
+    "dev": "yarn workspace @adz-ui/play dev",
+    "build": "yarn workspace adz-ui build",
+    "docs:dev": "yarn workspace @adz-ui/docs dev",
+    "docs:build": "yarn workspace @adz-ui/docs docs:build",
+    "test": "yarn workspace @adz-ui/components test"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.12",
-    "@types/node": "^20.12.12",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "@vue/tsconfig": "^0.5.1",
@@ -31,10 +29,10 @@
     "vue-tsc": "^2.0.19"
   },
   "dependencies": {
-    "@ada-ui/hooks": "workspace:*",
-    "@ada-ui/theme": "workspace:*",
-    "@ada-ui/utils": "workspace:*",
-    "ada-ui": "workspace:*",
+    "@adz-ui/hooks": "workspace:*",
+    "@adz-ui/theme": "workspace:*",
+    "@adz-ui/utils": "workspace:*",
+    "adz-ui": "workspace:*",
     "lodash-es": "^4.17.21"
   }
 }

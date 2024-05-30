@@ -1,5 +1,5 @@
 {
-  "name": "@ada-ui/play",
+  "name": "@adz-ui/play",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ada-ui": "workspace:*",
+    "adz-ui": "workspace:*",
     "vue": "^3.4.21"
   },
   "devDependencies": {

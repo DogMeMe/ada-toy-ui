@@ -1,5 +1,5 @@
 {
-  "name": "@ada-ui/components",
+  "name": "@adz-ui/components",
   "packageManager": "yarn@3.8.2",
   "scripts": {
     "test": "vitest --coverage"
@@ -11,7 +11,7 @@
     "vitest": "^1.6.0"
   },
   "dependencies": {
-    "@ada-ui/utils": "workspace:*",
+    "@adz-ui/utils": "workspace:*",
     "@popperjs/core": "^2.11.8",
     "async-validator": "^4.2.5"
   }
