@@ -38,8 +38,8 @@
     "vue-tsc": "^2.0.19"
   },
   "dependencies": {
-    "@adz-ui/components": "workspace:*",
-    "@adz-ui/constants": "workspace:*",
+    "@adz-ui/components": "workspace:^",
+    "@adz-ui/constants": "workspace:^",
     "@adz-ui/hooks": "workspace:*",
     "@adz-ui/theme": "workspace:*",
     "@adz-ui/utils": "workspace:*",

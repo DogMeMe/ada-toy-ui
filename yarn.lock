@@ -5,7 +5,7 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@adz-ui/components@workspace:*, @adz-ui/components@workspace:packages/components":
+"@adz-ui/components@workspace:^, @adz-ui/components@workspace:packages/components":
   version: 0.0.0-use.local
   resolution: "@adz-ui/components@workspace:packages/components"
   dependencies:
@@ -19,7 +19,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@adz-ui/constants@workspace:*, @adz-ui/constants@workspace:packages/constants":
+"@adz-ui/constants@workspace:^, @adz-ui/constants@workspace:packages/constants":
   version: 0.0.0-use.local
   resolution: "@adz-ui/constants@workspace:packages/constants"
   languageName: unknown
@@ -2023,8 +2023,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ada-toy-ui@workspace:."
   dependencies:
-    "@adz-ui/components": "workspace:*"
-    "@adz-ui/constants": "workspace:*"
+    "@adz-ui/components": "workspace:^"
+    "@adz-ui/constants": "workspace:^"
     "@adz-ui/hooks": "workspace:*"
     "@adz-ui/theme": "workspace:*"
     "@adz-ui/utils": "workspace:*"
@@ -2057,6 +2057,7 @@ __metadata:
   resolution: "adz-ui@workspace:packages/adz-ui"
   dependencies:
     vite-plugin-dts: ^3.9.1
+    vue: ^3.4.21
   peerDependencies:
     vue: ^3.4.21
   languageName: unknown

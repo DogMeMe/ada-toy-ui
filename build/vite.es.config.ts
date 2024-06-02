@@ -4,7 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { filter, map } from "lodash-es";
 import { readdirSync } from "fs";
-import { epOutput, projRoot, epRoot} from "./path";
+import { buildOutput, projRoot, epRoot} from "./path";
 
 function getDirectoriesSync(basePath: string) {
   const entries = readdirSync(basePath, { withFileTypes: true });
@@ -21,11 +21,11 @@ export default defineConfig({
     vue(),
     dts({
       tsconfigPath: resolve(projRoot, "./tsconfig.build.json"),
-      outDir: resolve(epOutput, "./types"),
+      outDir: resolve(buildOutput, "./types"),
     }),
   ],
   build: {
-    outDir: resolve(epOutput, "./es"),
+    outDir: resolve(buildOutput, "./es"),
     lib: {
       entry: resolve(epRoot, "./index.ts"),
       name: "AdzUI",

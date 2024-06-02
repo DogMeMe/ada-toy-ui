@@ -22,7 +22,7 @@
       "noFallthroughCasesInSwitch": true
     },
     "include": [
-        "packages/ada-toy-ui/index.ts",
+        "packages/adz-ui/index.ts",
         "packages/hooks/**/*.ts",
         "packages/utils/**/*.ts",
         "packages/components/index.ts",

@@ -1,11 +1,11 @@
 {
-  "name": "adz-ui",
+  "name": "build",
   "packageManager": "yarn@3.8.2",
   "scripts": {
-    "build-umd": "vite build --config vite.umd.config.ts",
-    "build-es": "vite build --config vite.es.config.ts",
-    "move-style": "move-file ../dist/adz-ui/dist/es/index.css ../dist/adz-ui/dist/index.css",
-    "clean": "rimraf ../dist",
+    "build-umd": "vite build --config vite.umd.config.ts --emptyOutDir",
+    "build-es": "vite build --config vite.es.config.ts --emptyOutDir",
+    "move-style": "move-file ../packages/adz-ui/dist/es/index.css ../packages/adz-ui/dist/index.css",
+    "clean": "rimraf ../packages/adz-ui/dist",
     "build-only": "run-p build-es build-umd",
     "build": "run-s clean build-only move-style"
   },

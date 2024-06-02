@@ -2809,7 +2809,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/adz-ui/",\
           "packageDependencies": [\
             ["adz-ui", "workspace:packages/adz-ui"],\
-            ["vite-plugin-dts", "virtual:7c632b580a7d71ae570768320b54d19ce897a36e8e2111bcd830331ea519fe3d0215043e3ca791530ff356061999efc87009a360d7b606253d1335186e6b8ad4#npm:3.9.1"]\
+            ["vite-plugin-dts", "virtual:7c632b580a7d71ae570768320b54d19ce897a36e8e2111bcd830331ea519fe3d0215043e3ca791530ff356061999efc87009a360d7b606253d1335186e6b8ad4#npm:3.9.1"],\
+            ["vue", "virtual:a99aad454fa68e21ca3fff6936933c2d7c97d05bee6ad493b1eaa06563f36a89bd8655aa6979b7fab28e3c2a0063ecdee1600883216eaa6b585bc41a8cd377ea#npm:3.4.27"]\
           ],\
           "linkType": "SOFT"\
         }]\
