@@ -2,14 +2,16 @@
   "name": "ada-toy-ui",
   "packageManager": "yarn@3.8.2",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "docs",
-    "play"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "docs",
+      "play"
+    ]
+  },
   "scripts": {
     "dev": "yarn workspace @adz-ui/play dev",
-    "build": "yarn workspace adz-ui release && yarn workspace adz-ui build",
+    "build": "yarn workspace build build",
     "docs:dev": "yarn workspace @adz-ui/docs dev",
     "docs:build": "yarn workspace @adz-ui/docs docs:build",
     "test": "yarn workspace @adz-ui/components test"
@@ -42,7 +44,6 @@
     "@adz-ui/theme": "workspace:*",
     "@adz-ui/utils": "workspace:*",
     "adz-ui": "workspace:*",
-    "lodash-es": "^4.17.21",
     "vue": "^3.4.21"
   }
 }

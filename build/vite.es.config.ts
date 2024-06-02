@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import { filter, map } from "lodash-es";
 import { readdirSync } from "fs";
+import { epOutput, projRoot, epRoot} from "./path";
 
 function getDirectoriesSync(basePath: string) {
   const entries = readdirSync(basePath, { withFileTypes: true });
@@ -19,15 +20,15 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      tsconfigPath: "../../tsconfig.build.json",
-      outDir: "dist/types",
+      tsconfigPath: resolve(projRoot, "./tsconfig.build.json"),
+      outDir: resolve(epOutput, "./types"),
     }),
   ],
   build: {
-    outDir: "dist/es",
+    outDir: resolve(epOutput, "./es"),
     lib: {
-      entry: resolve(__dirname, "./index.ts"),
-      name: "AdaUI",
+      entry: resolve(epRoot, "./index.ts"),
+      name: "AdzUI",
       fileName: "index",
       formats: ["es"],
     },
@@ -53,7 +54,7 @@ export default defineConfig({
             return "utils";
           }
 
-          for (const dirName of getDirectoriesSync("../components")) {
+          for (const dirName of getDirectoriesSync("../packages/components")) {
             if (id.includes(`/packages/components/${dirName}`)) {
               return dirName;
             }

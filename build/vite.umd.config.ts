@@ -1,15 +1,16 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
+import { epOutput, epRoot } from './path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
   build: {
-    outDir: "dist/umd",
+    outDir: resolve(epOutput, './umd'),
     lib: {
-      entry: resolve(__dirname, "./index.ts"),
-      name: "AdaUI",
+      entry: resolve(epRoot, "./index.ts"),
+      name: "AdzUI",
       fileName: "index",
       formats: ["umd"],
     },

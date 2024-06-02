@@ -1,0 +1,21 @@
+{
+  "name": "adz-ui",
+  "packageManager": "yarn@3.8.2",
+  "scripts": {
+    "build-umd": "vite build --config vite.umd.config.ts",
+    "build-es": "vite build --config vite.es.config.ts",
+    "move-style": "move-file ../dist/adz-ui/dist/es/index.css ../dist/adz-ui/dist/index.css",
+    "clean": "rimraf ../dist",
+    "build-only": "run-p build-es build-umd",
+    "build": "run-s clean build-only move-style"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.12",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
