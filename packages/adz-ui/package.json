@@ -21,11 +21,11 @@
   "files": [
     "dist"
   ],
-  "devDependencies": {
-    "vite-plugin-dts": "^3.9.1"
-  },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "lodash-es": "^4.17.21",
+    "@adz-ui/components": "workspace:*",
+    "@adz-ui/constants": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.4.21"
