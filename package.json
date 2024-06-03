@@ -6,8 +6,7 @@
     "packages": [
       "packages/*",
       "docs",
-      "play",
-      "build"
+      "play"
     ]
   },
   "scripts": {
